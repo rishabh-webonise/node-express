@@ -8,11 +8,4 @@ const pool = mysql.createPool({
   database: process.env.DB_DATABASE,
 });
 
-// let sql = 'select * from employees limit 10;';
-
-// pool.execute(sql, (err, res) => {
-//   if (err) throw err;
-//   console.log(res);
-// });
-
 module.exports = pool.promise();
